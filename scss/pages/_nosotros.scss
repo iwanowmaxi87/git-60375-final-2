@@ -1,0 +1,51 @@
+
+/*seccion explorar*/
+
+main {
+  div {
+    .img-dos, .img-cinco {
+      display: none;
+    }    
+    .tit-explorar {
+      color: $color-tres;
+      text-align: center;
+      margin: 30px auto;
+      background-color: $color-cuatro;
+      border-radius: 50px 50px;
+      padding: 20px;
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+      @include medidas (50%, auto);
+    }
+    p{
+      text-align: center;
+      color: $text-color-dos;
+    }       
+  }  
+}
+
+.section-explorar {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 30%);
+  gap: 1rem;
+  margin: 3rem 2rem;
+
+  img {
+    @include medidas (100%, 100%);
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .boton-explorar {
+    list-style: none;
+    text-decoration: none;
+    margin: 20px;
+    background-color: $color-cuatro;
+    color: $text-color-uno;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 25px;
+    @include shadow;
+  }
+}

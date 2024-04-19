@@ -1,0 +1,72 @@
+
+/*seccion botanicos*/
+
+.titulo-botanicos {
+    font-family: $font-family;
+    text-align: center;
+    margin: 40px auto 0;
+    color: $text-color-uno;
+    background-color: $color-cuatro;
+    border-radius: 50px 50px 0 0;
+    @include medidas (90%, auto);
+    padding: 10px;
+    @include shadow;
+  
+    h1 {
+      color: $color-uno;
+      padding: 10px;
+    }
+    P{
+      color: $text-color-uno;
+    }  
+  }
+  .subtitulo-botanicos{
+    h2{
+      margin: 20px auto 0;
+      @include medidas (90%, auto);
+      text-align: center;
+      padding: 30px;
+      background-color: $bg-color-secundario;
+      border-radius: 0 0 50px 50px;
+    }
+  }
+  .section-botanicos {
+    @include medidas (80%, auto);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 20%);
+    gap: 10rem;  
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+    
+  
+    img {
+      border-radius: 50px 50px ;
+      @include medidas (100%, 50%);
+      object-fit: cover;
+      margin-top: 40px;
+      @include shadow;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    p {
+      background-color: $bg-color-secundario;
+      color: $text-color-dos;
+      border-radius: 50px 0px 50px;
+      padding: 20px;
+      @include medidas (100%, auto);
+      text-align: center;
+      @include shadow;
+    }
+  
+    h3{
+      margin: 10px;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      padding: 10px;
+      text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    }  
+  }

@@ -1,0 +1,62 @@
+
+/*seccion tienda */
+
+.section-inicio {
+    position: relative; 
+    text-align: center;
+    overflow: hidden; 
+    color: $color-uno;
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
+    background-color: $color-cuatro;
+    
+}
+.section-inicio{
+    .container {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1;   
+    }
+}
+.container {
+        display: flex;
+        flex-direction: row ;
+        align-items: center;
+        text-align: center;
+        color: $color-tres;            
+        padding: 20px;
+        border-radius: 20px;
+    
+    }
+
+/* Definición de estilos para el contenedor principal */
+    .img-prendas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 40%); 
+        gap: 1px; 
+        margin: 10px; 
+        @include medidas (80%, auto);
+        padding: 20px;
+        height: 80vh;
+        transition: transform 0.3s ease; 
+        
+    }
+
+ /* Definición de estilos para las imágenes */
+    
+   .img-prendas{
+        img{            
+            @include medidas (80%, auto);
+            object-fit: cover;  
+            margin: 40px 50px;        
+        }
+    }
+    .img-prendas{ 
+                img{
+                    &:hover {
+            transform: scale(1.3); 
+            }
+        }
+    }

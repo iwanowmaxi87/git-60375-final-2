@@ -1,0 +1,99 @@
+
+/*SECCION CONTACTENOS */
+
+.body-contactenos {
+    background-color: $color-cuatro;
+  }
+  
+  .contactenos {
+    @include medidas (70%, auto);
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: $text-color-dos;
+    @include shadow;
+  
+    .tit-contactenos {
+      color: $text-color-uno;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+  
+    .form-contactenos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .label-contactenos {
+        margin-bottom: 8px;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        @include medidas (100%, auto);
+      }
+  
+      .textarea-msj {
+        padding: 40px;
+      }
+  
+      .boton-contactenos {
+        padding: 10px 20px;
+        margin: 0;
+        border: none;
+        border-radius: 4px;
+        background-color: $color-dos;
+        color: $text-color-uno;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: $color-uno;
+          color: $text-color-dos;
+        }
+      }
+    }
+  }
+/* Estilo para el contenedor contactenos */
+  main {
+      .titulo-contactenos{
+      .acceder-contactenos {
+        font-size: 3rem;
+        text-align: center;
+        margin: 50px 0 10px 0;
+        background-color: $bg-color-secundario;
+        border-radius: 50px 50px 0 0;
+        @include medidas (70%, auto);
+        padding: 20px;
+        @include shadow; 
+        margin-left: auto;
+        margin-right: auto;
+      
+    
+    
+      /* Estilo para el párrafo dentro de contactenos */
+      .p-contactenos {
+        color: $text-color-uno;
+        text-align: center;
+        background-color: $color-uno;
+        border-radius: 0 0 50px 50px;
+        @include medidas (70%, auto);
+        padding: 10px; 
+        @include shadow;
+        margin-left: auto;
+        margin-right: auto; 
+      
+    
+        /* Estilo para centrar h1 y h3 */
+        h1, h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

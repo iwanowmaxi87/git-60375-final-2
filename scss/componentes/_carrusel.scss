@@ -1,0 +1,73 @@
+
+// Estilos para el carousel explorar
+
+.explorar{
+
+    .carousel-caption {
+
+        h2 {
+          color: $color-uno; 
+          margin-bottom: 1rem;
+        }
+  
+        
+        p {
+          color: $text-color-uno; 
+          margin-bottom: 1rem; 
+        }
+  
+        // Estilos para el elemento .btn dentro de .custom-bg
+        .btn {
+          background-color: $color-dos; 
+          color: $text-color-uno; 
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem; 
+          text-decoration: none; 
+          transition: background-color 0.3s ease; 
+  
+          // Estilos al pasar el cursor sobre el botón
+          &:hover {
+            background-color: $bg-color-secundario;
+            color:$color-cuatro; 
+          }
+        }
+      }
+    }
+
+
+
+    // Estilos para el carousel explorar
+
+.main-bienvenidos{
+
+  .carousel-caption {
+
+      h2 {
+        color: $color-uno; 
+        margin-bottom: 1rem;
+      }
+
+      
+      p {
+        color: $text-color-uno; 
+        margin-bottom: 1rem; 
+      }
+
+      // Estilos para el elemento .btn dentro de .custom-bg
+      .btn {
+        background-color: $color-dos; 
+        color: $text-color-uno; 
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem; 
+        text-decoration: none; 
+        transition: background-color 0.3s ease; 
+
+        // Estilos al pasar el cursor sobre el botón
+        &:hover {
+          background-color: $bg-color-secundario;
+          color:$color-cuatro; 
+        }
+      }
+    }
+  }
+  
