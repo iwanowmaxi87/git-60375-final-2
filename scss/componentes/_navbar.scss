@@ -51,11 +51,16 @@
         z-index: 100;
         left: 50%;
         transform: translateX(30%);
+
         a{
           color: $text-color-uno;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
+          &:hover {
+            background-color: $bg-color-secundario;
+            color:$color-cuatro; 
+          }
         }
       }
     }
@@ -98,6 +103,10 @@
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        &:hover {
+          background-color: $bg-color-secundario;
+          color:$color-cuatro; 
+        }
       }
     }
   }

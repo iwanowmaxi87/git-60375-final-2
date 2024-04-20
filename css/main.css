@@ -117,6 +117,10 @@
   text-decoration: none;
   display: block;
 }
+.navbar .dropdown .dropdown-content a:hover {
+  background-color: #e0dbcc;
+  color: #272c3b;
+}
 @media screen and (max-width: 768px) {
   .navbar .dropdown {
     display: block;
@@ -154,6 +158,10 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+.dropdown-explorar .dropdown-content-explorar a:hover {
+  background-color: #e0dbcc;
+  color: #272c3b;
 }
 
 @media screen and (max-width: 768px) {
@@ -296,7 +304,7 @@
   grid-template-rows: repeat(1, 40%);
   gap: 1px;
   margin: 10px;
-  width: 80%;
+  width: 60%;
   height: auto;
   padding: 20px;
   height: 80vh;
