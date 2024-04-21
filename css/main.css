@@ -270,31 +270,8 @@
 }
 
 /*seccion tienda */
-.section-inicio {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  color: #736032;
-  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
-  background-color: #272c3b;
-}
-
-.section-inicio .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  color: #faf9f9;
-  padding: 20px;
-  border-radius: 20px;
+.seccion-tienda {
+  justify-content: center;
 }
 
 /* Definición de estilos para el contenedor principal */
@@ -309,9 +286,42 @@
   padding: 20px;
   height: 80vh;
   transition: transform 0.3s ease;
+  position: relative;
+  /* Definición de estilos para las imágenes */
+  /* Mostrar el texto cuando se hace hover sobre el enlace */
 }
-
-/* Definición de estilos para las imágenes */
+.img-prendas .hover-text .text-gorro {
+  display: none;
+}
+.img-prendas .text-gorro {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #faf9f9;
+  padding: 10px;
+  display: none;
+  background-color: rgba(191, 191, 191, 0.2);
+  border-radius: 50px;
+}
+.img-prendas .text-remera {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: #e0dbcc;
+  padding: 10px;
+  display: none;
+  background-color: #272c3b;
+  border-radius: 50px;
+}
+.img-prendas .hover-text {
+  position: relative;
+  display: inline-block;
+}
+.img-prendas .hover-text:hover .text-gorro, .img-prendas .text-remera {
+  display: block;
+}
 .img-prendas img {
   width: 80%;
   height: auto;
@@ -321,6 +331,15 @@
 
 .img-prendas img:hover {
   transform: scale(1.3);
+}
+
+.titulo-tienda {
+  background-color: #e0dbcc;
+  color: #272c3b;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 20px;
 }
 
 /*seccion explorar*/
