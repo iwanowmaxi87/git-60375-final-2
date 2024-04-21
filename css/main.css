@@ -398,6 +398,7 @@ main div p {
   padding: 30px;
   background-color: #e0dbcc;
   border-radius: 0 0 50px 50px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section-botanicos {
@@ -432,11 +433,13 @@ main div p {
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .section-botanicos h3 {
-  margin: 10px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  color: #e0dbcc;
+  background-color: #272c3b;
   font-size: 20px;
   padding: 10px;
-  text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*SECCION CONTACTENOS */

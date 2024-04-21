@@ -28,6 +28,7 @@
       padding: 30px;
       background-color: $bg-color-secundario;
       border-radius: 0 0 50px 50px;
+      @include shadow;
     }
   }
   .section-botanicos {
@@ -62,11 +63,13 @@
       @include shadow;
     }
   
-    h3{
-      margin: 10px;
-      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    h3{ 
+      color: $bg-color-secundario;   
+      background-color: $color-cuatro;      
       font-size: 20px;
       padding: 10px;
-      text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+      margin: 10px;      
+      border-radius: 50px;
+      @include shadow;
     }  
   }
