@@ -39,8 +39,8 @@
 /* mq de desktop seccion botanicos */
 @media screen and (min-width: 1024px) {
   main .section-botanicos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(3, 40%);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 /* mq seccion tienda*/
@@ -473,7 +473,6 @@ main div p {
   transform: scale(1.2);
 }
 .section-botanicos p {
-  margin: 20px 0;
   background-color: #e0dbcc;
   color: #2e2e2e;
   border-radius: 30px;

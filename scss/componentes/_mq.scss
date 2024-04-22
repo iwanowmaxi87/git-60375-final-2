@@ -42,8 +42,8 @@
 /* mq de desktop seccion botanicos */
   @media screen and (min-width: 1024px) {
   main .section-botanicos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(3, 40%);
+    grid-template-rows: repeat(2, 1fr);
     }
   }
 
