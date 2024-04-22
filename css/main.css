@@ -40,7 +40,7 @@
 @media screen and (min-width: 1024px) {
   main .section-botanicos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 50%);
   }
 }
 /* mq seccion tienda*/
@@ -452,30 +452,31 @@ main div p {
 }
 
 .section-botanicos {
-  width: 80%;
+  width: 50%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 20%);
-  gap: 10rem;
-  margin: 10px auto;
+  grid-template-rows: repeat(8, 2fr);
+  margin: 20px auto;
   transition: transform 0.3s ease;
+  gap: 2rem;
 }
-.section-botanicos img {
-  border-radius: 50px 50px;
-  width: 100%;
-  height: 50%;
+.section-botanicos .img-botanicos {
+  border-radius: 50px;
+  width: 80%;
+  height: auto;
   object-fit: cover;
-  margin-top: 40px;
+  margin: 10px;
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
-.section-botanicos img:hover {
+.section-botanicos .img-botanicos:hover {
   transform: scale(1.2);
 }
 .section-botanicos p {
+  margin: 20px 0;
   background-color: #e0dbcc;
   color: #2e2e2e;
-  border-radius: 50px 0px 50px;
+  border-radius: 30px;
   padding: 20px;
   width: 100%;
   height: auto;
@@ -579,13 +580,15 @@ main .titulo-contactenos .acceder-contactenos .p-contactenos h1, main .titulo-co
   text-align: center;
 }
 
+.footer {
+  display: contents;
+}
 .footer .copy p, .footer .footer-botanicos p {
   text-align: center;
   background-color: #272c3b;
   box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5);
   padding: 8px;
   font-size: 14px;
-  margin-top: 20rem;
 }
 
 .footer-medios {
