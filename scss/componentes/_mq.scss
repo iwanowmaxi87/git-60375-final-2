@@ -1,5 +1,5 @@
 
-/* mq de tablet seccion explorar */
+// mq de tablet seccion explorar
 
 @media screen and (min-width: 600px) {
     main .section-explorar {
@@ -10,10 +10,11 @@
       grid-column: span 2;
     }
   }
-  /* mq de desktop seccion explorar */
+  // mq de desktop seccion explorar
   @media screen and (min-width: 1024px) {
     main div .img-pingu {
       display: block;
+      
     }
     main .section-explorar {
       grid-template-columns: repeat(2, 1fr);
@@ -28,10 +29,11 @@
     main div .img-pingu {
       grid-row: span 2;
     }
+    
 }
 
 
-/* mq seccion botanicos */
+// mq seccion botanicos 
 
 @media screen and (min-width: 600px) {
   main .section-botanicos {

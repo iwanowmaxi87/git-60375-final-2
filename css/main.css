@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* mq de tablet seccion explorar */
 @media screen and (min-width: 600px) {
   main .section-explorar {
     grid-template-columns: repeat(2, 1fr);
@@ -10,7 +9,6 @@
     grid-column: span 2;
   }
 }
-/* mq de desktop seccion explorar */
 @media screen and (min-width: 1024px) {
   main div .img-pingu {
     display: block;
@@ -29,7 +27,6 @@
     grid-row: span 2;
   }
 }
-/* mq seccion botanicos */
 @media screen and (min-width: 600px) {
   main .section-botanicos {
     grid-template-columns: repeat(1, 1fr);
@@ -397,7 +394,7 @@ main div p {
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 30%);
+  grid-template-rows: repeat(3, 20%);
   gap: 1rem;
   margin: 3rem 2rem;
 }
@@ -588,6 +585,7 @@ main .titulo-contactenos .acceder-contactenos .p-contactenos h1, main .titulo-co
   box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5);
   padding: 8px;
   font-size: 14px;
+  margin-top: 80vh;
 }
 
 .footer-medios {
