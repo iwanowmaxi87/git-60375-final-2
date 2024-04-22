@@ -1,12 +1,10 @@
 
-/*seccion tienda */
-.seccion-tienda{
-justify-content: center;
-}
 
 
 
-/* Definición de estilos para el contenedor principal */
+
+
+// Definición de estilos para el contenedor principal
 
     .img-prendas {
         display: grid;
@@ -20,9 +18,9 @@ justify-content: center;
         transition: transform 0.3s ease;        
         position: relative;
           
- /* Definición de estilos para las imágenes */
+ // Definición de estilos para las imágenes
        
-    .hover-text .text-gorro {
+    .hover-text .text-gorro   {
         display: none;
                 
     }    
@@ -50,7 +48,7 @@ justify-content: center;
       }
       
 
-      /* Mostrar el texto cuando se hace hover sobre el enlace */
+      // Mostrar el texto cuando se hace hover sobre el enlace 
       .hover-text {
         position: relative; 
         display: inline-block;  
@@ -60,14 +58,14 @@ justify-content: center;
         display: block;
 
       }
-        img{            
+        img {            
             @include medidas (80%, auto);
             object-fit: cover;  
             margin: 40px 50px;  
                
         }
     }
-    .img-prendas{ 
+    .img-prendas { 
                 img{
                     &:hover {
             transform: scale(1.3);
@@ -90,4 +88,50 @@ justify-content: center;
 
 
     
+// PROMO
 
+.section-promo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $bg-color-secundario;
+    margin-top: 80vh;
+  }
+  
+  .info {    
+    text-align: center;
+    margin: 20px;
+  }
+  
+  // Estilos para cada bloque de promoción 
+  .regalo {
+    color: #d1a24b;
+    font-size: 24px;
+  }
+  
+  .cuota {
+    color: $color-tres;
+    font-size: 24px;
+  }
+  
+  .off {
+    color: #d1a24b;
+    font-size: 24px;
+  }
+  
+  // Estilos para pantallas más pequeñas
+  @media screen and (max-width: 400px) {
+    .info {
+      flex-basis: 40%;
+    }
+  
+    // Reducir el tamaño de fuente para los bloques de promoción 
+    .regalo,
+    .cuota,
+    .off {
+      font-size: 14px;
+    }
+  }
+
+  

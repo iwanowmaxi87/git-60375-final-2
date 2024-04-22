@@ -269,12 +269,6 @@
   color: #272c3b;
 }
 
-/*seccion tienda */
-.seccion-tienda {
-  justify-content: center;
-}
-
-/* Definición de estilos para el contenedor principal */
 .img-prendas {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -287,8 +281,6 @@
   height: 80vh;
   transition: transform 0.3s ease;
   position: relative;
-  /* Definición de estilos para las imágenes */
-  /* Mostrar el texto cuando se hace hover sobre el enlace */
 }
 .img-prendas .hover-text .text-gorro {
   display: none;
@@ -342,6 +334,45 @@
   margin: 20px;
 }
 
+.section-promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e0dbcc;
+  margin-top: 80vh;
+}
+
+.info {
+  text-align: center;
+  margin: 20px;
+}
+
+.regalo {
+  color: #d1a24b;
+  font-size: 24px;
+}
+
+.cuota {
+  color: #faf9f9;
+  font-size: 24px;
+}
+
+.off {
+  color: #d1a24b;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    flex-basis: 40%;
+  }
+  .regalo,
+  .cuota,
+  .off {
+    font-size: 14px;
+  }
+}
 /*seccion explorar*/
 main div .img-dos, main div .img-cinco {
   display: none;
@@ -548,14 +579,75 @@ main .titulo-contactenos .acceder-contactenos .p-contactenos h1, main .titulo-co
   text-align: center;
 }
 
-/* SECCION FOOTER */
 .footer .copy p, .footer .footer-botanicos p {
   text-align: center;
   background-color: #272c3b;
   box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5);
   padding: 8px;
   font-size: 14px;
-  margin-top: 100rem;
+  margin-top: 20rem;
+}
+
+.footer-medios {
+  padding: 20px;
+}
+.footer-medios .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-medios .footer-tarjetas,
+.footer-medios .footer-contacto,
+.footer-medios .footer-envios {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer-medios .footer-tarjetas,
+  .footer-medios .footer-contacto,
+  .footer-medios .footer-envios {
+    flex-basis: 100%;
+  }
+}
+.footer-medios .footer-tarjetas h5,
+.footer-medios .footer-contacto h5,
+.footer-medios .footer-envios h5 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.footer-medios .footer-tarjetas a,
+.footer-medios .footer-contacto a,
+.footer-medios .footer-envios a {
+  color: #736032;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+.footer-medios .footer-tarjetas .iconos-tarjetas,
+.footer-medios .footer-tarjetas .iconos-envios,
+.footer-medios .footer-contacto .iconos-tarjetas,
+.footer-medios .footer-contacto .iconos-envios,
+.footer-medios .footer-envios .iconos-tarjetas,
+.footer-medios .footer-envios .iconos-envios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-medios .footer-tarjetas .iconos-tarjetas .footer-icon,
+.footer-medios .footer-tarjetas .iconos-tarjetas .footer-top-icon,
+.footer-medios .footer-tarjetas .iconos-envios .footer-icon,
+.footer-medios .footer-tarjetas .iconos-envios .footer-top-icon,
+.footer-medios .footer-contacto .iconos-tarjetas .footer-icon,
+.footer-medios .footer-contacto .iconos-tarjetas .footer-top-icon,
+.footer-medios .footer-contacto .iconos-envios .footer-icon,
+.footer-medios .footer-contacto .iconos-envios .footer-top-icon,
+.footer-medios .footer-envios .iconos-tarjetas .footer-icon,
+.footer-medios .footer-envios .iconos-tarjetas .footer-top-icon,
+.footer-medios .footer-envios .iconos-envios .footer-icon,
+.footer-medios .footer-envios .iconos-envios .footer-top-icon {
+  width: 50px;
+  height: auto;
 }
 
 * {
@@ -572,8 +664,9 @@ body {
   text-align: center;
 }
 
-.background--primary, .background--primary-hover:hover {
-  background-color: #30343f;
+.background-primary {
+  background-color: #272c3b;
+  color: #faf9f9;
 }
 
 /*# sourceMappingURL=main.css.map */

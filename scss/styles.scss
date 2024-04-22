@@ -27,15 +27,21 @@
   font-family: $font-family;
 }
 
-
 body {
   background-color: $color-fondo;
   color: $color-uno; 
   height: 100%;
-  text-align: center;
+  text-align: center; 
 }
 
 //top texto
-.background--primary, .background--primary-hover:hover {
-  background-color: #30343f;
+.background-primary{
+  background-color: $color-cuatro;
+  color: $color-tres;
 }
+
+
+
+
+  
+
