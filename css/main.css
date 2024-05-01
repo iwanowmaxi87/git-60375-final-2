@@ -488,6 +488,7 @@ main .nuestra-historia h4 {
 
 /*seccion botanicos*/
 .titulo-botanicos {
+  border-radius: 50px 50px 0 0;
   text-align: center;
   margin: 10px auto 0;
   color: #faf9f9;
@@ -512,10 +513,7 @@ main .nuestra-historia h4 {
   margin: 20px auto 0;
   width: 90%;
   height: auto;
-  text-align: center;
   padding: 30px;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
   font-family: "Roboto", sans-serif;
 }
 
@@ -542,8 +540,8 @@ main .nuestra-historia h4 {
 }
 .section-botanicos p {
   font-family: "Open Sans";
-  background-color: #e0dbcc;
-  color: #2e2e2e;
+  background-color: rgba(255, 255, 255, 0.5607843137);
+  color: #272c3b;
   border-radius: 20px;
   padding: 10px;
   width: 100%;
