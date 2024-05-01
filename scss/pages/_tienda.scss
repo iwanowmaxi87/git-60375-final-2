@@ -3,7 +3,7 @@
 .img-prendas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 50%);
+  grid-template-rows: repeat(3, 30%);
   gap: 1px;
   margin: 10px;
   @include medidas (60%, auto);
@@ -11,6 +11,8 @@
   height: 70vh;
   transition: transform 0.3s ease;
   position: relative;
+  justify-content: center;
+  align-items: center;
 
   // Definición de estilos para las imágenes
 
@@ -102,7 +104,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;  
-  margin-top: 20vh;
+  margin-top: 10vh;
   animation: backgroundAnimation 5s infinite;
 }
 
