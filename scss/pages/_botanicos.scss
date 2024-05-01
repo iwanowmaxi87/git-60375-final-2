@@ -1,77 +1,83 @@
-
 /*seccion botanicos*/
 
-.titulo-botanicos {
-    font-family: $font-family;
-    text-align: center;
-    margin: 40px auto 0;
-    color: $text-color-uno;
-    background-color: $color-cuatro;
-    border-radius: 50px 50px 0 0;
-    @include medidas (90%, auto);
+.titulo-botanicos {  
+  text-align: center;
+  margin: 10px auto 0;
+  color: $text-color-uno;  
+  border-radius: 50px 50px 0 0;
+  @include medidas (90%, auto);
+  padding: 10px;
+  @include shadow;
+
+  h1 {    
+    color: $color-uno;
     padding: 10px;
+    font-family: $font-roboto;
+  }
+
+  P {
+    color: $text-color-uno;
+    font-family: $font-roboto;
+    line-height: 2.5;
+  }
+}
+
+.subtitulo-botanicos {
+  h2 {
+    margin: 20px auto 0;
+    @include medidas (90%, auto);
+    text-align: center;
+    padding: 30px;    
+    border-radius: 0 0 50px 50px;
     @include shadow;
-  
-    h1 {
-      color: $color-uno;
-      padding: 10px;
-    }
-    P{
-      color: $text-color-uno;
-    }  
+    font-family: $font-roboto;
   }
-  .subtitulo-botanicos{
-    h2{
-      margin: 20px auto 0;
-      @include medidas (90%, auto);
-      text-align: center;
-      padding: 30px;
-      background-color: $bg-color-secundario;
-      border-radius: 0 0 50px 50px;
-      @include shadow;
+}
+
+.section-botanicos {
+  @include medidas (100%, auto);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  gap: 1rem;
+
+
+
+  .img-botanicos {
+    border-radius: 20px;
+    @include medidas (80%, auto);
+    object-fit: cover;
+    margin: 10px;
+    @include shadow;
+
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
-  .section-botanicos {
-    @include medidas (50%, auto);
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 2fr);     
-    margin: 20px auto;
-    transition: transform 0.3s ease;
-    gap: 2rem;
-    
-    
-  
-    .img-botanicos {
-      border-radius: 50px;
-      @include medidas (80%, auto);
-      object-fit: cover;
-      margin: 10px;
-      @include shadow;
-      
-  
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  
-    p {      
-      background-color: $bg-color-secundario;
-      color: $text-color-dos;
-      border-radius: 30px;
-      padding: 20px;
-      @include medidas (100%, auto);
-      text-align: center;
-      @include shadow;
-    }
-  
-    h3{      
-      color: $bg-color-secundario;   
-      background-color: $color-cuatro;      
-      font-size: 20px;
-      padding: 10px;
-      margin: 10px;      
-      border-radius: 50px;
-      @include shadow;
-    }  
+
+  p {
+    font-family: $font-open;
+    background-color: $bg-color-secundario;
+    color: $text-color-dos;
+    border-radius: 20px;
+    padding: 10px;
+    @include medidas (100%, auto);
+    text-align: center;
+    @include shadow;
+    line-height: 1.2;
   }
+
+  h3 {
+    font-family: $font-roboto;
+    color: $bg-color-secundario;
+    background-color: $color-cuatro;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    @include shadow;
+  }
+}

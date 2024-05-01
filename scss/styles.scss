@@ -1,19 +1,22 @@
 @import "utilidades/variables";
 @import "utilidades/mixin";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
 //componentes, mq, navbar & bootstrap
 @import "componentes/mq";
 @import "componentes/navbar";
-@import "componentes/bootstrap";
 @import "componentes/carrusel";
+@import "componentes/loby";
 
 //pages
 @import "pages/tienda";
 @import "pages/nosotros";
 @import "pages/botanicos";
 @import "pages/contactenos";
+@import "pages/explorar";
+
 
 
 //footer
@@ -23,25 +26,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: $font-family;
+  box-sizing: border-box;  
+  
 }
 
 body {
-  background-color: $color-fondo;
-  color: $color-uno; 
+  background-color: #101010;
+  color: $color-uno;
   height: 100%;
-  text-align: center; 
+  text-align: center;
 }
-
-//top texto
-.background-primary{
-  background-color: $color-cuatro;
-  color: $color-tres;
-}
-
-
-
-
-  
-

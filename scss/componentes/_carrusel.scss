@@ -1,73 +1,76 @@
-
 // Estilos para el carousel explorar
 
-.explorar{
+.explorar {
+  margin: 20px;
 
-    .carousel-caption {
+  .carousel {
+    width: 100%;
+    height: auto;
+    margin: auto;
 
-        h2 {
-          color: $color-uno; 
-          margin-bottom: 1rem;
-        }
-  
-        
-        p {
-          color: $text-color-uno; 
-          margin-bottom: 1rem; 
-        }
-  
-        // Estilos para el elemento .btn dentro de .custom-bg
-        .btn {
-          background-color: $color-dos; 
-          color: $text-color-uno; 
-          padding: 0.5rem 1rem;
-          border-radius: 0.25rem; 
-          text-decoration: none; 
-          transition: background-color 0.3s ease; 
-  
-          // Estilos al pasar el cursor sobre el botón
-          &:hover {
-            background-color: $bg-color-secundario;
-            color:$color-cuatro; 
-          }
-        }
-      }
-    }
+  }
 
-
-
-    // Estilos para el carousel inicio
-
-.main-bienvenidos{
-
-  .carousel-caption {
-
-      h2 {
-        color: $color-cuatro; 
-        margin-bottom: 1rem;
-      }
-
-      
-      p {
-        color: $color-cuatro; 
-        margin-bottom: 1rem; 
-      }
-
-      // Estilos para el elemento .btn dentro de .custom-bg
-      .btn {
-        background-color: $color-dos; 
-        color: $text-color-uno; 
-        padding: 0.5rem 1rem;
-        border-radius: 0.25rem; 
-        text-decoration: none; 
-        transition: background-color 0.3s ease; 
-
-        // Estilos al pasar el cursor sobre el botón
-        &:hover {
-          background-color: $bg-color-secundario;
-          color:$color-cuatro; 
-        }
-      }
+  @media screen and (min-width: 1024px) {
+    .carousel-inner {
+      grid-template-columns: repeat(1, 1fr);
+      width: 30%;
+      height: auto;
+      margin: auto;
     }
   }
-  
+
+
+
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-tres;
+    @include medidas (50%, auto);
+    border-radius: 20px;
+
+
+  }
+
+  h2 {
+    color: $color-tres;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-family: $font-roboto;
+  }
+
+
+  p {
+    color: $text-color-uno;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-family: $font-roboto;
+  }
+
+  .custom-bg {
+    background-color: $fondo-transparente;
+    border-radius: 20px;
+    text-align: center;
+    @include medidas (100%, auto);
+
+  }
+
+  // Estilos para el elemento .btn dentro de .custom-bg
+
+  .btn {
+    background-color: $color-dos;
+    color: $text-color-uno;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+
+    // Estilos al pasar el cursor sobre el botón
+    &:hover {
+      background-color: $bg-color-secundario;
+      color: $color-cuatro;
+    }
+  }
+}

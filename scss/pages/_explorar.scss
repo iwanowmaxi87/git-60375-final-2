@@ -1,0 +1,60 @@
+section {
+    .wrap {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/img/CLASICO-PLAYA.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+
+    .wrap-texto {
+        color: $color-tres;
+        text-align: center;
+        font-family: $font-roboto
+    }
+}
+
+
+.tragos {
+    @include medidas (100%, auto);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+    gap: 1rem;
+    font-family: $font-bebas;
+}
+
+.img-tragos {
+    @include medidas (100%, auto);
+    object-fit: cover;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.img-ballena {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-intro{
+    font-family: $font-open;
+    text-align: left;
+    line-height: 2.2;    
+    align-items: center;
+    justify-content: center;
+    word-spacing: 5px;
+}
+
+.destacado{
+    color: $color-uno;
+    font-family: $font-open;
+    font-size: 20px;
+}

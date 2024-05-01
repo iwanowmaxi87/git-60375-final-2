@@ -1,77 +1,91 @@
+// Footer inicio
 
-// SECCION FOOTER
+.footer-loby {
+  color: $color-tres;
+  font-size: 14px;
+  padding: 8px;
+  font-family: $font-open;
+}
 
-.footer {  
-    .copy, .footer-botanicos {
-      p{
-      text-align: center;
-      background-color: $color-cuatro;
-      box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.5);
-      padding: 8px;
-      font-size: 14px;
-      margin-top: 80vh;
-      }  
-    }
-    display:contents;
+
+// Footer nosotro-explorar-botanicos-tinda
+
+.footer {
+  p {
+    color: $color-tres;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 20vh;
+    font-family: $font-open;
+  }
+}
+
+
+
+// Footer explorar tajetas-envios
+
+.footer-medios {
+  padding: 20px;
+  background-color: rgb(10, 10, 10);
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-tarjetas,
+  .footer-contacto,
+  .footer-envios {
+    flex-basis: 30%;
+    margin: 20px;
   }
  
+  @media screen and (max-width: 768px) {
 
-
-  // FOOTER MENU INICIO
-
-  .footer-medios { 
-    padding: 20px;
-    
-    .footer-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  
     .footer-tarjetas,
     .footer-contacto,
     .footer-envios {
-      flex-basis: 30%; 
-      margin-bottom: 20px;
-    }
-  
-    @media screen and (max-width: 768px) {
-      .footer-tarjetas,
-      .footer-contacto,
-      .footer-envios {
-        flex-basis: 100%;
-      }
-    }
-  
-    // Estilos comunes para los bloques
-    .footer-tarjetas,
-    .footer-contacto,
-    .footer-envios {
-      h5 {
-        font-size: 16px;
-        color: #333;
-        margin-bottom: 10px;
-      }
-  
-      a {
-        color: $color-uno;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      .iconos-tarjetas,
-      .iconos-envios {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-  
-        .footer-icon,
-        .footer-top-icon {
-          width: 50px;
-          height: auto;
-        }
-      }
+      flex-basis: 100%;
+
     }
   }
-      
+
+  // Estilos comunes para los bloques
+
+  .footer-tarjetas,
+  .footer-contacto,
+  .footer-envios {
+    h5 {
+      font-size: 16px;
+      color: $color-tres;
+      margin-bottom: 10px;
+      font-family: $font-open;
+    }
+
+    a {
+      color: $color-uno;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+      font-family: $font-open;
+    }
+
+    .iconos-tarjetas,
+    .iconos-envios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+
+      .footer-icon,
+      .footer-top-icon {
+        width: 50px;
+        height: auto;
+
+      }
+
+    }
+  }
+}

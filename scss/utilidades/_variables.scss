@@ -1,5 +1,8 @@
 // tipografias
-$font-family: 'Open Sans';
+$font-open: 'Open Sans';
+$font-roboto: 'Roboto', sans-serif;
+$font-bebas: "Bebas Neue", sans-serif;
+
 
 // color fondos
 $color-fondo: #faf9f9;
@@ -8,11 +11,10 @@ $fondo-transparente: rgba(191, 191, 191, 0.2);
 
 // color base
 $color-uno: #736032;
-$color-dos:#274274;
+$color-dos: #274274;
 $color-tres: #faf9f9;
 $color-cuatro: #272c3b;
 
 // color textos
 $text-color-uno: #faf9f9;
 $text-color-dos: #2e2e2e;
-

@@ -1,36 +1,22 @@
-
-// mq de tablet seccion explorar
+// mq de tablet seccion nosotros
 
 @media screen and (min-width: 600px) {
-    main .section-explorar {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 30%);
-    }
-    main div .img-ballena-uno {
-      grid-column: span 2;
-    }
-  }
-  // mq de desktop seccion explorar
-  @media screen and (min-width: 1024px) {
-    main div .img-pingu {
-      display: block;
-      
-    }
-    main .section-explorar {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 40% 60% 40% 50%;
-    }
-    main div .img-ballena-uno, main div .img-faro {
-      grid-column: span 1;
-    }
-    main div .img-ballena-dos {
-      grid-row: span 4;
-    }
-    main div .img-pingu {
-      grid-row: span 2;
-    }
+  main .section-nosotros {
+    grid-template-columns: repeat(2, 1fr);
     
+  }
+
 }
+
+// mq de desktop seccion nosotros
+@media screen and (min-width: 1024px) {
+  main .section-nosotros {
+    grid-template-columns: repeat(2, 1fr);      
+  }  
+  
+}
+
+
 
 
 // mq seccion botanicos 
@@ -38,42 +24,73 @@
 @media screen and (min-width: 600px) {
   main .section-botanicos {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 50%);
-    }    
+    grid-template-rows: repeat(6, 1fr);
   }
+}
+
 /* mq de desktop seccion botanicos */
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   main .section-botanicos {
-    grid-template-columns: repeat(3, 40%);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    }
+  }
+}
+
+
+
+
+
+/* mq seccion tienda*/
+
+/* Media query para dispositivos con una anchura máxima de 768px */
+
+@media (min-width: 600px) {
+  section .img-prendas {
+    grid-template-columns: repeat(3, 1fr);
+    /* tres columnas */
+    grid-template-rows: repeat(2, 100%)
   }
 
+  section div div .remera-blanca {
+    grid-row: span 3
+  }
+}
+
+/* Media query para dispositivos con una anchura máxima de 480px */
+@media (min-width: 1024px) {
+  section .img-prendas {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 40%)
+  }
+
+  section div div .remera-blanca {
+    grid-column: span 2
+  }
+}
 
 
 
 
-  /* mq seccion tienda*/
 
-   /* Media query para dispositivos con una anchura máxima de 768px */
+// mq seccion tragos
+@media screen and (min-width: 600px) {
+  section .tragos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-   @media (min-width: 600px) {
-    section .img-prendas {
-         grid-template-columns: repeat(3, 1fr); /* tres columnas */
-         grid-template-rows: repeat(2, 100%)
-     }
-     section div div .remera-blanca {
-         grid-row: span 3
-     }
- }
+// mq de desktop seccion tragos
+@media screen and (min-width: 1024px) {
+  section .tragos {
+    grid-template-columns: repeat(3, 1fr);
 
- /* Media query para dispositivos con una anchura máxima de 480px */
- @media (min-width: 1024px) {
-     section .img-prendas {
-         grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: repeat(1, 40%)
-     }
-     section div div .remera-blanca {
-         grid-column: span 2
-     }
- }
+  }
+}
+
+.descripcion-tragos {
+  color: $color-uno;
+  padding: 10px;
+  @include medidas (100%, auto);
+  text-align: center;
+
+}

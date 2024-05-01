@@ -1,51 +1,47 @@
-
-/*seccion explorar*/
+//Seccion explorar
 
 main {
-  div {
-    .img-dos, .img-cinco {
-      display: none;
-    }    
+
+  .nuestra-historia {
+
     .tit-explorar {
-      color: $color-tres;
+      line-height: 2.5;
+      color: $color-uno;
       text-align: center;
-      margin: 30px auto;
-      background-color: $color-cuatro;
-      border-radius: 50px 50px;
-      padding: 20px;
-      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-      @include medidas (50%, auto);
+      border-radius: 40px;
+      padding: 10px;
+      @include medidas (100%, auto);
+      font-family: $font-roboto;
     }
-    p{
+
+    h4 {
+      padding: 20px;
+      font-family: $font-roboto;
       text-align: center;
-      color: $text-color-dos;
-    }       
-  }  
+      color: $color-tres;
+
+    }
+  }
 }
 
-.section-explorar {
-  height: 80vh;
+.section-nosotros {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 20%);
   gap: 1rem;
-  margin: 3rem 2rem;
+  object-fit: cover;
+  margin: 10px;
+  text-align: center;
+  color: $color-tres;
+  align-items: center;
+
+  p {
+    line-height: 1.5;
+    white-space: pre-line;
+  }
 
   img {
     @include medidas (100%, 100%);
     object-fit: cover;
-    border-radius: 20px;
-  }
 
-  .boton-explorar {
-    list-style: none;
-    text-decoration: none;
-    margin: 20px;
-    background-color: $color-cuatro;
-    color: $text-color-uno;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 25px;
-    @include shadow;
+
   }
 }

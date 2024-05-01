@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
     <title>Explorar | Peninsula Gin </title>
 </head>
+
 <body class="body-contactenos">
     <header>
         <nav class="navbar">
@@ -18,84 +21,60 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../pages/explorar.html">Explorar</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>                
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
                 <li><a href="../pages/botanicos.html">Botánicos</a></li>
-                <li><a href="../pages/tienda.html">Tienda</a></li>                
+                <li><a href="../pages/tienda.html">Tienda</a></li>
             </ul>
             <div class="dropdown">
                 <button class="dropbtn">&#9776;</button>
                 <div class="dropdown-content">
-                    <a href="../pages/explorar.html">Explorar</a>  
+                    <a href="../pages/explorar.html">Explorar</a>
                     <a href="../pages/nosotros.html">Nosotros</a>
-                    <a href="../pages/botanicos.html">Botánicos</a>                                      
+                    <a href="../pages/botanicos.html">Botánicos</a>
                     <a href="../pages/contactenos.html">Contactenos</a>
                     <a href="../pages/tienda.html">Tienda</a>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <!-- Sección de Contacto -->
-    <main>
-        <div class="titulo-contactenos">                    
-            <h1 class="acceder-contactenos">Acceder</h1>
-            <h3 class="p-contactenos">Unete a nuestra aventura.</h3>
+
+
+
+    <div class="form-box">
+        <div class="wrapper">
+            <div class="img-area">
+                <img src="../logos/ANCLA.png" alt="">
+            </div>
+            <div class="form-area">
+                <h3>Login</h3>
+                <form>
+                    <div class="single-form">
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="single-form">
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" value="Login" />
+                </form>
+            </div>
         </div>
-    </main>
-    
-    <section class="contactenos" id="contacto">
-        <h2 class="tit-contactenos">Contacto</h2>
-        <form class="form-contactenos" action="#" method="POST">
-            <label class="label-contactenos" for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+    </div>
 
-            <label class="label-contactenos" for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label class="label-contactenos" for="mensaje">Mensaje:</label>
-            <textarea class="textarea-msj" id="mensaje" name="mensaje" required></textarea>
 
-            <button class="boton-contactenos" type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
 
-    <!-- Sección de Registro -->
-    <section class="contactenos" id="registro">
-        <h2 class="tit-contactenos">Registrarse</h2>
-        <form class="form-contactenos" action="#" method="POST">
-            <label class="label-contactenos" for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
 
-            <label class="label-contactenos" for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
 
-            <button class="boton-contactenos" type="submit">Registrarse</button>
-        </form>
-    </section>
 
-    <!-- Sección de Comentarios -->
-    <section class="contactenos" id="comentarios">
-        <h2 class="tit-contactenos">Dejar un Comentario</h2>
-        <form class="form-contactenos" action="#" method="POST">
-            <label class="label-contactenos" for="nombre_comentario">Nombre:</label>
-            <input type="text" id="nombre_comentario" name="nombre_comentario" required>
 
-            <label class="label-contactenos" for="comentario">Comentario:</label>
-            <textarea class="textarea-msj" id="comentario" name="comentario" required></textarea>
+    <!--footer-->
 
-            <button class="boton-contactenos" type="submit">Enviar Comentario</button>
-        </form>
-    </section>
-
-    <!--pie-->
     <footer class="footer">
-
-        <!--COPY-->
-        <div class="footer-botanicos">
-            <p>&copy; Todos los derechos reservados | Peninsula Gin 2024 </p>
-        </div>
-
-    </footer> 
+        <p>&copy; Todos los derechos reservados | Peninsula Gin 2024 </p>
+    </footer>
 
 </body>
+
 </html>
