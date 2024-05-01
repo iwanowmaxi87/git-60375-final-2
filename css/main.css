@@ -543,7 +543,8 @@ main .nuestra-historia h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  margin: 50px auto;
 }
 
 .wrapper {
@@ -685,7 +686,7 @@ section .wrap-texto {
   font-family: "Open Sans";
 }
 
-.footer p {
+.footer {
   padding: 8px;
   color: #faf9f9;
   text-align: center;
