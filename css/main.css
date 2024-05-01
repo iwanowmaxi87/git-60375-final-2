@@ -581,18 +581,8 @@ main .nuestra-historia h4 {
   background-position: center;
 }
 
-.img-area {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-.img-area img {
-  max-width: 100%;
-  height: auto;
-}
-
 .form-area {
+  font-family: "Roboto", sans-serif;
   color: #faf9f9;
   flex: 1;
   padding: 20px;
@@ -613,7 +603,7 @@ main .nuestra-historia h4 {
 
 input[type=text],
 input[type=password] {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   border: 1px solid #faf9f9;
   border-radius: 5px;

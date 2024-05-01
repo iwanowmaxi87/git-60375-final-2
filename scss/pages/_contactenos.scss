@@ -22,18 +22,8 @@
   background-position: center;
 }
 
-.img-area {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-.img-area img {
-  max-width: 100%;
-  height: auto;
-}
-
 .form-area {
+  font-family: $font-roboto;
   color: $color-tres;
   flex: 1;
   padding: 20px;
@@ -54,7 +44,7 @@
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   border: 1px solid $color-tres;
   border-radius: 5px;
