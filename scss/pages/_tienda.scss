@@ -2,13 +2,13 @@
 
 .img-prendas {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 40%);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 50%);
   gap: 1px;
   margin: 10px;
   @include medidas (60%, auto);
   padding: 20px;
-  height: 80vh;
+  height: 70vh;
   transition: transform 0.3s ease;
   position: relative;
 
@@ -87,15 +87,12 @@
   margin: 20px;
 }
 
-.parrafo-tienda{
-  font-family: $font-roboto; 
+.parrafo-tienda {
+  font-family: $font-roboto;
   color: $color-tres;
-  text-align: center; 
-  padding: 10px;  
+  text-align: center;
+  padding: 10px;
 }
-
-
-
 
 
 // PROMO
@@ -104,20 +101,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: $bg-color-secundario;
-  margin-top: 80vh;
+  flex-wrap: wrap;  
+  margin-top: 20vh;
+  animation: backgroundAnimation 5s infinite;
 }
 
 .info {
   text-align: center;
   margin: 20px;
+  p{
+    color: $color-uno;
+  }
 }
 
 // Estilos para cada bloque de promoción 
 
 .regalo {
-  color: $color-uno;
+  color: $color-cuatro;
   font-size: 24px;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .off {
-  color: $color-uno;
+  color: $color-cuatro;
   font-size: 24px;
 }
 
@@ -138,7 +138,7 @@
     flex-basis: 40%;
   }
 
-  // Reducir el tamaño de fuente para los bloques de promoción 
+// Reducir el tamaño de fuente para los bloques de promoción 
 
   .regalo,
   .cuota,
@@ -146,3 +146,28 @@
     font-size: 14px;
   }
 }
+
+
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f781a8;
+  }
+
+  25% {
+    background-color: #89c9c6;
+  }
+
+  50% {
+    background-color: #6ca79d;
+  }
+
+  75% {
+    background-color: #a67bca;
+  }
+
+  100% {
+    background-color: #f56887;
+  }
+}
+
