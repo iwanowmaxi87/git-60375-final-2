@@ -301,14 +301,14 @@
   border-right: var(--border-right) solidvar(--animation-color);
   overflow: hidden;
   transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
+  --webkit-text-stroke: 1px var(--animation-color);
   text-decoration: none;
 }
 
 .btn-inicio:hover .hover-text {
   text-decoration: none;
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
+  filter: drop-shadow(0 0 30px var(--animation-color));
 }
 
 .img-prendas {
@@ -689,7 +689,6 @@ section .wrap-texto {
 .footer p {
   color: #faf9f9;
   text-align: center;
-  padding: 8px;
   font-size: 14px;
   margin-top: 20vh;
   font-family: "Open Sans";
