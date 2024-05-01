@@ -441,6 +441,7 @@ main .nuestra-historia h4 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #faf9f9;
+  font-size: 20px;
 }
 
 .section-nosotros {
@@ -455,6 +456,7 @@ main .nuestra-historia h4 {
 .section-nosotros p {
   line-height: 1.5;
   white-space: pre-line;
+  font-size: 20px;
 }
 .section-nosotros img {
   width: 100%;
@@ -673,6 +675,9 @@ section .wrap-texto {
   align-items: center;
   justify-content: center;
   word-spacing: 5px;
+}
+.text-intro p {
+  font-size: 20px;
 }
 
 .destacado {
