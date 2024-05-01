@@ -682,11 +682,11 @@ section .wrap-texto {
 .footer-loby {
   color: #faf9f9;
   font-size: 14px;
-  padding: 8px;
   font-family: "Open Sans";
 }
 
 .footer p {
+  padding: 8px;
   color: #faf9f9;
   text-align: center;
   font-size: 14px;

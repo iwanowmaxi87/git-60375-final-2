@@ -2,8 +2,7 @@
 
 .footer-loby {
   color: $color-tres;
-  font-size: 14px;
-  padding: 8px;
+  font-size: 14px;  
   font-family: $font-open;
 }
 
@@ -12,6 +11,7 @@
 
 .footer {
   p {
+    padding: 8px;
     color: $color-tres;
     text-align: center;    
     font-size: 14px;
