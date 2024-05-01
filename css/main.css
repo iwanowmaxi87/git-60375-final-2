@@ -74,6 +74,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  border-bottom: 2px solid #736032;
   /* Estilos para el botón desplegable */
 }
 .navbar .logo {
