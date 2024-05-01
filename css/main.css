@@ -683,6 +683,7 @@ section .wrap-texto {
   color: #faf9f9;
   font-size: 14px;
   font-family: "Open Sans";
+  padding: 5px;
 }
 
 .footer p {
