@@ -4,8 +4,8 @@
 .form-box {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  margin: 20px;  
+  align-items: center;
+  margin: 20px;
 
 }
 
@@ -84,12 +84,17 @@ input[type="submit"] {
 
 //redes
 .socials {
-	margin-top: 50px;
-	
+  margin-top: 50px;
+
 }
+
 .socials i {
-	font-size: 28px;
-	margin: 0px 10px;
-	color: $color-tres;
-	
+  font-size: 28px;
+  margin: 0px 10px;
+  color: $color-tres;
+
+  &:hover {
+    transform: scale(1.3);
+    color: $color-dos;
+  }
 }
