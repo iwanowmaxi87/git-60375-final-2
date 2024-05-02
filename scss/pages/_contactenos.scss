@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;  
-  margin: 30px;  
+  margin: 20px;  
 
 }
 
@@ -80,4 +80,16 @@ input[type="submit"] {
   .img-area {
     margin-bottom: 20px;
   }
+}
+
+//redes
+.socials {
+	margin-top: 50px;
+	
+}
+.socials i {
+	font-size: 28px;
+	margin: 0px 10px;
+	color: $color-tres;
+	
 }

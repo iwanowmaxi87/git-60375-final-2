@@ -312,6 +312,72 @@
   filter: drop-shadow(0 0 30px var(--animation-color));
 }
 
+.team-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #fff;
+}
+
+.box {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box figcaption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 23, 112, 0.7);
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  border-radius: 100px 100px 0 0;
+}
+
+.box:hover figcaption {
+  transform: translateY(0);
+}
+
+.box h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .team-area {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .box h2 {
+    font-size: 20px;
+  }
+}
 .img-prendas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -440,7 +506,7 @@
     background-color: #89c9c6;
   }
   50% {
-    background-color: #6ca79d;
+    background-color: #6c8ba7;
   }
   75% {
     background-color: #a67bca;
@@ -566,7 +632,7 @@ main .nuestra-historia h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 20px;
 }
 
 .wrapper {
@@ -638,6 +704,16 @@ input[type=submit]:hover {
     margin-bottom: 20px;
   }
 }
+.socials {
+  margin-top: 50px;
+}
+
+.socials i {
+  font-size: 28px;
+  margin: 0px 10px;
+  color: #faf9f9;
+}
+
 section .wrap {
   width: 100vw;
   height: 80vh;
