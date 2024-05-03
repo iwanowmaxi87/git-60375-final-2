@@ -1,6 +1,6 @@
 //Seccion contactenos
 main {
-  .wrap-contactenos {
+  .contactenos {
     width: auto;
     height: 30vh;
     display: flex;
@@ -10,7 +10,7 @@ main {
     background-size: cover;
     background-position: center;
   }
-  .wrap-texto-contactenos {
+  .texto-contactenos {
     color: $color-tres;
     text-align: center;
     font-family: $font-roboto;
