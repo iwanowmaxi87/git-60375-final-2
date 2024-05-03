@@ -1,28 +1,28 @@
 //Seccion contactenos
 .contenedor-contactenos {
   .wrap-contactenos {
-      width: auto;
-      height: 30vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/img/botella-3.jpg);
-      background-size: cover;
-      background-position: center;
+    width: auto;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../img/botella-3.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
 
   .wrap-texto-contactenos {
-      color: $color-tres;
-      text-align: center;
+    color: $color-tres;
+    text-align: center;
+    font-family: $font-roboto;
+    font-size: 20px;
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 40px;
       font-family: $font-roboto;
-      font-size: 20px;
-           
-      h1{
-        margin-bottom: 20px;
-        font-size: 40px;
-        font-family: $font-roboto;
-      }
+    }
   }
 }
 
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
-  
+
 }
 
 .wrapper {

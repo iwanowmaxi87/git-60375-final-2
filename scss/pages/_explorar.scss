@@ -43,19 +43,20 @@ section {
     height: auto;
 }
 
-.text-intro{
+.text-intro {
     font-family: $font-open;
     text-align: left;
-    line-height: 2.2;    
+    line-height: 2.2;
     align-items: center;
     justify-content: center;
     word-spacing: 5px;
-    p{
-       font-size: 20px;
+
+    p {
+        font-size: 20px;
     }
 }
 
-.destacado{
+.destacado {
     color: $color-uno;
     font-family: $font-open;
     font-size: 20px;

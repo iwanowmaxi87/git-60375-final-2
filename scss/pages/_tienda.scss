@@ -103,7 +103,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   margin-top: 10vh;
   animation: backgroundAnimation 5s infinite;
 }
@@ -111,7 +111,8 @@
 .info {
   text-align: center;
   margin: 20px;
-  p{
+
+  p {
     color: $color-uno;
   }
 }
@@ -140,7 +141,7 @@
     flex-basis: 40%;
   }
 
-// Reducir el tamaño de fuente para los bloques de promoción 
+  // Reducir el tamaño de fuente para los bloques de promoción 
 
   .regalo,
   .cuota,
@@ -172,4 +173,3 @@
     background-color: #f56887;
   }
 }
-

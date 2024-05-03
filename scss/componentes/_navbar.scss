@@ -9,6 +9,7 @@
   align-items: center;
   padding: 10px 20px;
   border-bottom: 2px solid #736032;
+
   .logo {
     height: 80px;
   }
@@ -20,10 +21,12 @@
     li {
       margin-right: 20px;
       font-family: $font-open;
+
       a {
         text-decoration: none;
         color: $color-uno;
         font-family: $font-open;
+
         &:hover {
           color: $text-color-uno;
         }
@@ -51,7 +54,7 @@
       z-index: 100;
       left: 50%;
       transform: translateX(30%);
-      
+
 
       a {
         color: $text-color-uno;
@@ -59,6 +62,7 @@
         text-decoration: none;
         display: block;
         font-family: $font-open;
+
         &:hover {
           background-color: $bg-color-secundario;
           color: $color-cuatro;
@@ -74,7 +78,7 @@
 
     .nav-links {
       display: none;
-      
+
     }
 
     .dropdown:hover .dropdown-content {

@@ -1,14 +1,13 @@
-
 .team-area {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 50vh;
-	color: #fff;	
+	color: #fff;
 }
 
 .box {
-	
+
 	position: relative;
 	margin: 20px;
 	overflow: hidden;
@@ -17,15 +16,18 @@
 	max-width: 400px;
 	transition: transform 0.3s ease;
 }
+
 .img {
 	width: 100%;
-	display: block;	
+	display: block;
 	transition: transform 0.5s ease;
 }
+
 .box:hover {
 	transform: scale(1.05);
-	
+
 }
+
 .box figcaption {
 	position: absolute;
 	width: 100%;
@@ -37,10 +39,12 @@
 	transition: transform 0.5s ease;
 	border-radius: 100px 100px 0 0;
 }
+
 .box:hover figcaption {
 	transform: translateY(0);
-	
+
 }
+
 .box h2 {
 	font-size: 40px;
 	text-transform: uppercase;
@@ -48,9 +52,10 @@
 	font-family: "Bebas Neue", sans-serif;
 	margin: 0;
 }
+
 .box p {
 	font-size: 14px;
-	
+
 }
 
 @media(max-width: 800px) {
@@ -58,6 +63,7 @@
 		flex-direction: column;
 	}
 }
+
 @media(max-width: 600px) {
 	.box h2 {
 		font-size: 20px;
