@@ -1,5 +1,5 @@
 //Seccion contactenos
-section {
+.contenedor-contactenos {
   .wrap-contactenos {
       width: auto;
       height: 30vh;
@@ -21,6 +21,7 @@ section {
       h1{
         margin-bottom: 20px;
         font-size: 40px;
+        font-family: $font-roboto;
       }
   }
 }
