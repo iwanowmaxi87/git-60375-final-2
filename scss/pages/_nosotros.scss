@@ -4,14 +4,14 @@ main {
 
   .nuestra-historia {
 
-    .tit-explorar {
-      line-height: 2.5;
+    .tit-explorar {      
       color: $color-uno;
       text-align: center;
       border-radius: 40px;
       padding: 10px;
       @include medidas (100%, auto);
       font-family: $font-roboto;
+      letter-spacing: 5px;
     }
 
     h4 {
@@ -19,7 +19,7 @@ main {
       font-family: $font-roboto;
       text-align: center;
       color: $color-tres;
-      font-size: 20px;
+      font-size: 20px;      
     }
   }
 }
@@ -35,7 +35,6 @@ main {
 
   p {
     line-height: 1.5;
-    white-space: pre-line;
     font-size: 20px;
   }
 

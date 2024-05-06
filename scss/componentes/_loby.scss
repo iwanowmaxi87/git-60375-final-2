@@ -20,12 +20,6 @@
   background-position: center;
 }
 
-.text-bienvenidos {
-  color: #fff;
-  text-align: center;
-  width: 50%;
-}
-
 
 
 //boton inicio
@@ -41,7 +35,7 @@
 
   .ingresar {
     color: $color-tres;
-
+    margin: 0;
   }
 }
 
@@ -50,7 +44,7 @@
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #ffff;
   --fs-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: $font-open;

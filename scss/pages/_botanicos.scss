@@ -10,10 +10,12 @@
   padding: 10px;
   @include shadow;
 
+
   h1 {
     color: $color-uno;
     padding: 10px;
     font-family: $font-roboto;
+    letter-spacing: 5px;
   }
 
   P {

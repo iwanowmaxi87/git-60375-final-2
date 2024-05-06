@@ -257,12 +257,6 @@
   background-position: center;
 }
 
-.text-bienvenidos {
-  color: #fff;
-  text-align: center;
-  width: 50%;
-}
-
 .btn-inicio {
   margin: 0;
   height: auto;
@@ -275,6 +269,7 @@
 }
 .btn-inicio .ingresar {
   color: #faf9f9;
+  margin: 0;
 }
 
 .btn-inicio {
@@ -282,7 +277,7 @@
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #ffff;
   --fs-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Open Sans";
@@ -475,6 +470,7 @@
   border-radius: 50px;
   padding: 10px;
   margin: 20px;
+  letter-spacing: 5px;
 }
 
 .parrafo-tienda {
@@ -544,7 +540,6 @@
   }
 }
 main .nuestra-historia .tit-explorar {
-  line-height: 2.5;
   color: #736032;
   text-align: center;
   border-radius: 40px;
@@ -552,6 +547,7 @@ main .nuestra-historia .tit-explorar {
   width: 100%;
   height: auto;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
 }
 main .nuestra-historia h4 {
   padding: 20px;
@@ -572,7 +568,6 @@ main .nuestra-historia h4 {
 }
 .section-nosotros p {
   line-height: 1.5;
-  white-space: pre-line;
   font-size: 20px;
 }
 .section-nosotros img {
@@ -597,6 +592,7 @@ main .nuestra-historia h4 {
   color: #736032;
   padding: 10px;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
 }
 .titulo-botanicos P {
   color: #faf9f9;
@@ -673,6 +669,7 @@ main .texto-contactenos {
   font-size: 20px;
 }
 main .texto-contactenos h1 {
+  letter-spacing: 5px;
   margin-bottom: 20px;
   font-size: 40px;
   font-family: "Roboto", sans-serif;
@@ -683,6 +680,8 @@ main .texto-contactenos h1 {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -844,7 +843,6 @@ section .wrap-texto {
 
 .footer-medios {
   padding: 20px;
-  background-color: rgb(10, 10, 10);
 }
 .footer-medios .footer-container {
   display: flex;

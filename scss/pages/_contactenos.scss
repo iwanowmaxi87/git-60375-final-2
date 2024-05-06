@@ -8,14 +8,17 @@ main {
     justify-content: center;
     background-image: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../img/botella-3.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center;   
   }
+
   .texto-contactenos {
     color: $color-tres;
     text-align: center;
     font-family: $font-roboto;
     font-size: 20px;
+
     h1 {
+      letter-spacing: 5px;
       margin-bottom: 20px;
       font-size: 40px;
       font-family: $font-roboto;
@@ -24,15 +27,13 @@ main {
 }
 
 
-
-
-
 .form-box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
-
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .wrapper {
